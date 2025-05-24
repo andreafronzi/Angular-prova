@@ -1,12 +1,13 @@
 import {Component, inject, OnInit} from '@angular/core';
 import {MioServizioService} from '../services/mio-servizio.service';
 import {Resp} from '../interfaces/resp';
-import {JsonPipe} from '@angular/common';
+import {JsonPipe, NgForOf} from '@angular/common';
 
 @Component({
   selector: 'app-esempio',
   imports: [
-    JsonPipe
+    JsonPipe,
+    NgForOf
   ],
   templateUrl: './esempio.component.html',
   styleUrl: './esempio.component.scss'
